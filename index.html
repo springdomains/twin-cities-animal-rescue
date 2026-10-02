@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Twin Cities Animal Rescue</title>
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="home">
     <header>
-        <a href="index.html">
+        <a class="logo" href="index.html">
             <img src="assets/images/rescue-logo_c.png" width="120" height="111" alt="Twin Cities Animal Rescue Logo" />
         </a>
         <nav>
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html" aria-current="page">Home</a>
                 </li>
                 <li>
                     <a href="services.html">Services</a>
@@ -28,26 +32,28 @@
         </nav>
     </header>
     <main>
-        <h1>Finding new homes for our furry friends</h1>
         <picture>
             <source srcset="assets/images/rescue-feature-small_c.png 800w, assets/images/rescue-feature-large_c.png 1200w" />
             <img src="assets/images/rescue-feature-large_c" alt="Person in wheelchair alongside dog" />
         </picture>
-        <dl>
-            <div>
-                <dt>5,000+</dt>
-                <dd>Animals rescued</dd>
-            </div>
-            <div>
-                <dt>100+</dt>
-                <dd>Active volunteers</dd>
-            </div>
-            <div>
-                <dt>98%</dt>
-                <dd>Succesful placement rate</dd>
-            </div>
-        </dl>
         <section>
+            <h1>Finding forever homes for our furry friends across the Twin Cities</h1>
+            <dl>
+                <div>
+                    <dt>5,000+</dt>
+                    <dd>Animals rescued</dd>
+                </div>
+                <div>
+                    <dt>100+</dt>
+                    <dd>Active volunteers</dd>
+                </div>
+                <div>
+                    <dt>98%</dt>
+                    <dd>Succesful placement rate</dd>
+                </div>
+            </dl>
+        </section>
+        <section class="spotlight">
             <h2>Pet Spotlight</h2>
             <figure>
                 <img src="assets/images/rescue-pet-spotlight_c.png" alt="Close-up of cat with blurred background" />

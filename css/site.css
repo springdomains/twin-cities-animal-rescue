@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --beige: #fff8ee;
+  --orange: #d96c4a;
+  --green: #23daab;
+  --brown: #403832;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--brown);
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+audio {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces", serif;
+  color: var(--brown);
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: var(--orange);
+}
+
+a:hover {
+  color: var(--brown);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+}
+
+header .logo {
+  display: block;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+header nav a {
+  font-family: "Fraunces", serif;
+  display: block;
+  padding: 8px 12px;
+  font-weight: 700;
+  color: var(--brown);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: var(--green);
+}
+
+header nav a[aria-current="page"] {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+main {
+  background-color: var(--beige);
+}
+
+main > section,
+main > h1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+main > h1 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+main section ul {
+  list-style: none;
+}
+
+main section li {
+  margin-bottom: 24px;
+}
+
+main section li img {
+  margin-bottom: 16px;
+}
+
+video,
+audio {
+  margin-bottom: 24px;
+}
+
+figure {
+  margin-bottom: 20px;
+}
+
+figcaption {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--brown);
+  margin-top: 8px;
+}
+
+form > div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  font: inherit;
+  color: var(--brown);
+  border: 1px solid var(--brown);
+  border-radius: 4px;
+}
+
+textarea {
+  min-height: 140px;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--orange);
+  outline-offset: 1px;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  padding: 16px;
+  border: 1px solid var(--brown);
+  border-radius: 4px;
+}
+
+legend {
+  padding: 0 6px;
+  font-weight: 600;
+}
+
+fieldset label {
+  font-weight: 400;
+  margin-right: 16px;
+}
+
+button {
+  padding: 12px 28px;
+  font: inherit;
+  font-weight: 600;
+  color: var(--beige);
+  background-color: var(--orange);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--brown);
+}
+
+footer {
+  padding: 40px 20px;
+  border-top: 1px solid var(--brown);
+  text-align: center;
+  font-size: 14px;
+}
+
+footer a img {
+  margin: 0 auto;
+}
+
+footer address {
+  font-style: normal;
+  margin: 12px 0;
+}
+
+.home picture img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.home h1 {
+  text-align: center;
+}
+
+.spotlight {
+  text-align: center;
+  max-width: none;
+  background-color: var(--white);
+}
+
+.spotlight img {
+  max-width: min(100%, 400px);
+  margin: 0 auto;
+}
+
+.home dl {
+  padding: 20px 0 40px;
+  display: grid;
+  gap: 24px;
+  text-align: center;
+}
+
+.home dl dt {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.about section ul,
+.services section ul ul {
+  display: grid;
+  gap: 24px;
+}
+
+.about section li,
+.services section ul ul li {
+  margin-bottom: 0;
+  padding: 20px;
+  border-top: 3px solid var(--brown);
+}
+
+.services img {
+  max-width: min(100%, 400px);
+}
+
+.services section > ul > li {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--brown);
+}
+
+.services section > ul > li:last-child {
+  border-bottom: none;
+}
+
+.contact form {
+  max-width: 640px;
+}
+
+.contact section ul li {
+  margin-bottom: 4px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav a {
+    padding: 8px 20px;
+  }
+
+  main > section,
+  main > h1 {
+    padding: 40px 20px;
+  }
+
+  main > h1 {
+    padding-bottom: 0;
+  }
+
+  footer,
+  figcaption {
+    font-size: 16px;
+  }
+
+  .home dl {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 0 60px;
+  }
+
+  .home dl dt {
+    font-size: 32px;
+  }
+
+  .about section ul,
+  .services section ul ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
